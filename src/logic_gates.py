@@ -7,7 +7,7 @@ from src.transistors import PNPTransistor, NPNTransistor
 
 class _BaseLogicGate(metaclass=ABCMeta):
     """
-    Base class for all transistors.
+    Base class for all Logic Gates.
     """
 
     def __init__(self) -> None:
@@ -164,7 +164,7 @@ class NANDGate(_BaseLogicGate):
 
 class NORGate(_BaseLogicGate):
     """
-    Implementation of a NOR Gate using an OR Gate and an inverter.
+    Implementation of a NOR Gate using an OR Gate and an Inverter.
     """
 
     def __init__(self) -> None:
@@ -224,7 +224,7 @@ class XORGate(_BaseLogicGate):
 
 class XNORGate(_BaseLogicGate):
     """
-    Implementation of a XNOR Gate using a XOR Gate and an inverter.
+    Implementation of a XNOR Gate using a XOR Gate and an Inverter.
     """
 
     def __init__(self) -> None:

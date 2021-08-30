@@ -224,7 +224,7 @@ class XORGate(_BaseLogicGate):
 
 class XNORGate(_BaseLogicGate):
     """
-    Implementation of a XNOR Gate using a XOR Gate and an Inverter.
+    Implementation of a XNOR Gate using a XNOR Gate and an Inverter.
     """
 
     def __init__(self) -> None:

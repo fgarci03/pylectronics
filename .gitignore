@@ -1,0 +1,14 @@
+# IDE's
+.idea
+
+# Coverage
+.coverage
+coverage
+
+# Cache
+.mypy_cache
+.pytest_cache
+__pycache__
+
+# Virtual Environment
+venv

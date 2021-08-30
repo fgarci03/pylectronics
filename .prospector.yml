@@ -1,0 +1,77 @@
+inherits:
+  - strictness_veryhigh
+  - full_pep8
+
+
+member-warnings: true
+test-warnings: true
+
+
+pylint:
+  run: true
+  disable:
+    - W0142  # allow Used * or ** magic
+
+  options:
+    max-locals: 25
+    max-returns: 6
+    max-branches: 20
+    max-statements: 60
+    min-public-methods: 1
+    max-public-methods: 24
+    max-line-length: 120
+    max-args: 10
+    max-module-lines: 1200
+    max-attributes: 8
+    # Regular expressions used to match various names
+    # (we allow longer names than default)
+    argument-rgx: "[a-z_][a-z0-9_]{2,60}$"
+    attr-rgx: "[a-z_][a-z0-9_]{2,60}$"
+    function-rgx: "[a-z_][a-z0-9_]{2,60}$"
+    method-rgx: "[a-z_][a-z0-9_]{2,60}$"
+    variable-rgx: "[a-z_][a-z0-9_]{2,60}$"
+
+
+pep8:
+  run: true
+  options:
+    max-line-length: 120
+
+
+pyflakes:
+  run: true
+
+
+mccabe:
+  run: true
+  options:
+    max-complexity: 20
+
+
+dodgy:
+  run: false
+
+
+pep257:
+  run: true
+  disable:
+    - D104  # Missing docstring in public package
+    - D200  # One-line docstring should fit on one line with quotes
+    - D203  # 1 blank line required before class docstring
+    - D212  # Multi-line docstring summary should start at the first line
+
+
+pyroma:
+  run: true
+
+
+vulture:
+  run: true
+
+
+mypy:
+  run: true
+
+
+bandit:
+  run: true

@@ -1,4 +1,4 @@
-name: Static Validatie & Test
+name: Static Validate & Test
 
 on:
   push:
